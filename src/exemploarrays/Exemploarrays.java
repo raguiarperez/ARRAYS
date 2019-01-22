@@ -19,7 +19,8 @@ public class Exemploarrays {
         obx.crearArrays();
         obx.amosar();
         obx.amosarForEach();
-        obx.eleBuscar();    
+        obx.eleBuscar();
+        obx.repetidos();
     }
 
 }
