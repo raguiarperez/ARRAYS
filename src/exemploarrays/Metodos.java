@@ -1,6 +1,7 @@
 
 package exemploarrays;
 
+import java.util.Arrays;
 import javax.swing.JOptionPane;
 
 /**
@@ -8,8 +9,9 @@ import javax.swing.JOptionPane;
  * @author raguiarperez
  */
 public class Metodos {
-       int[] notas = new int[8];
-       int[] repes= new int[8];
+    int tam=5;
+    int[] notas = new int[5];
+    int[] repes= new int[5];
 
     public int darValor() {
         return Integer.parseInt(JOptionPane.showInputDialog("valor"));
@@ -61,8 +63,32 @@ public class Metodos {
         else if(z==1)
             System.out.println(elerepe+"no se repite");
            else
-        for(int i=0;i<z;i++)
+        for(int i=0;i<notas.length;i++)
             System.out.println(elerepe+" esta --> posicion:"+ repes[i]);
+    }
+//    public void ordenar(){
+//        int aux=0;
+//        for(int i=0;i<notas.length-1;i++)
+//            for(int j=0;j<notas.length;j++)
+//                if(notas[i]< notas[j]){
+//                    aux=notas[i];
+//                    notas[i]=notas[j];
+//                    notas[j]=aux;
+//                }
+//    }
+    public void ordenarshort(){
+        Arrays.sort(notas);
+    }
+    public void borrar(){
+        int eleBorrar= darValor();
+        for(int i=0;i<notas.length;i++)
+            if(eleBorrar == notas[i]){
+                for(int pos=i;pos<notas.length-1;pos++)
+                notas[pos]=notas[pos+1];
+                tam--;
+                
+                
+        }
     }
 
 }

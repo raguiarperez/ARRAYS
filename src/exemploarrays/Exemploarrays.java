@@ -21,6 +21,8 @@ public class Exemploarrays {
         obx.amosarForEach();
         obx.eleBuscar();
         obx.repetidos();
+        obx.ordenarshort();
+        obx.borrar();
     }
 
 }
